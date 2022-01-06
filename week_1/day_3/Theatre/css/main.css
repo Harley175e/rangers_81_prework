@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.hover:hover {
+	cursor: pointer;
+}
+.nav-custom {
+	padding: 10px;
+	background-color: #000;
+}
+.navbar-inner {
+	width: 95%;
+	margin: auto;
+}
+.navbar-brand {
+	font-size: 24px;
+}
+.nav-custom .nav-item {
+	color: #fff !important;
+	padding-left: 30px !important;
+}
+.nav-custom .nav-item:hover {
+	color: #f7b72e !important;
+	padding-left: 30px !important;
+}
+.banner {
+	background-image: url(del.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 22%;
+}
+.banner-heading {
+	font-size: 100px;
+	text-align: center;
+	color: steelblue;
+    font-weight:bolder;
+}
+.main-body {
+	padding-top: 10%;
+
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.date-heading {
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #f4f4f4;
+	border: 2px solid rgb(194, 194, 194);
+}
+.main-section {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	border-bottom: 2px solid rgb(194, 194, 194);
+}
+.btn-default {
+	font-size: 24px;
+	background-color: #f7b72e;
+	color: #fff;
+	font-weight: 500;
+	padding: 10px;
+}
+.btn-default:hover {
+	font-size: 24px;
+	background-color: #d49100;
+	color: #fff;
+	font-weight: 500;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: black;
+}
+
+.footercontainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    margin-bottom: 100px;
+    column-gap: 30px;
+}
+
+.footercontainer .section h2 {
+    position: relative;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.footercontainer .section p {
+    color: white;
+}
+
+.shows, .social {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+    row-gap: 0px;
+}
+
+.shows li, .social li {
+    list-style: none;
+}
+
+.shows li a, .social li a {
+    color: white;
+    text-decoration: none;
+}
+
+.shows li a:hover, .social li a:hover{
+    color: #ffeb3b;
+}
+
+.info {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+    row-gap:30px;
+    margin-left: -30px;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+.info li span {
+    color: white;
+}
+
+@media screen and (max-width: 960px) { 
+    .footercontainer { 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: "map info" "shows social"; 
+    } 
+}
+
+.map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
